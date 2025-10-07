@@ -17,7 +17,10 @@ import in.hotels.service.ContactService;
 
 @RestController
 @RequestMapping("/contacts")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+	    "http://localhost:4200",
+	    "https://fionastudiointerior.netlify.app"
+	})
 public class ContactController {
 
     @Autowired
