@@ -16,7 +16,7 @@ public class UserService {
         if(repo.findByEmail(u.getEmail()).isPresent()){
             throw new RuntimeException("User already exists");
         }
-        u.setRole("USER");
+        u.setRole("ADMIN");
         return repo.save(u);
     }
 
