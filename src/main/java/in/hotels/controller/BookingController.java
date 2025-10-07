@@ -16,7 +16,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import in.hotels.service.BookingService;
 
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+	    "http://localhost:4200",
+	    "https://fionastudiointerior.netlify.app"
+	})
+
 @RestController
 @RequestMapping("/api/bookings")
 public class BookingController {
